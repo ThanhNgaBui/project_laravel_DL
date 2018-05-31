@@ -15,11 +15,11 @@ class CreateDepartureScheduleTable extends Migration
     {
         Schema::create('departure_schedule', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('hot');
+            $table->integer('hot')->nullable();
             $table->string('title');
-            $table->string('introduce');
-            $table->text('information');
-            $table->string('image');
+            $table->string('introduce')->nullable();
+            $table->text('information')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

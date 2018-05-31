@@ -14,8 +14,11 @@
 <!--Icons-->
 <script src="{{ asset('js/lumino.glyphs.js') }}"></script>
 <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<!-- <script> CKEDITOR.replace('ckeditor3'); </script>
+<script> CKEDITOR.replace('ckeditor4'); </script> -->
 <script> CKEDITOR.replace('ckeditor1'); </script>
 <script> CKEDITOR.replace('ckeditor2'); </script>
+
 <!--[if lt IE 9]>
 <script src="{{ asset('js/html5shiv.js') }}"></script>
 <script src="{{ asset('js/respond.min.js') }}"></script>

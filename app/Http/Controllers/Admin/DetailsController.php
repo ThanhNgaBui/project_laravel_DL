@@ -160,7 +160,7 @@ class DetailsController extends Controller
     {
         $details = DetailsModel::findOrFail($id);
         $details->delete();
-        Session::flash('success',"Xóa danh mục thành công");
+        Session::flash('success',"Xóa thành công");
         return redirect('admin/details');
     }
 }

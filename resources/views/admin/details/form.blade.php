@@ -19,6 +19,10 @@
 									{!! Form::text('price_new',null, ['class' => "form-control", "placeholder" => "Mời bạn nhập giá khuyến mãi"]) !!}
 								</div>	
 								<div class="form-group">
+									<label>Giảm giá</label>
+									{!! Form::text('sale',null, ['class' => "form-control", "placeholder" => "Giảm giá"]) !!}
+								</div>	
+								<div class="form-group">
 									<label>Thời gian</label>
 									<!-- <input type="text" class="form-control" placeholder="Mời bạn nhập thời gian" name="time"> -->
 									{!! Form::text('time', null, ["class" => "form-control", "placeholder" => "Mời bạn nhập thời gian"]) !!}

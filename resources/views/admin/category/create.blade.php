@@ -28,6 +28,7 @@
 								<div class="form-group">
 									<label>Title</label>
 									<input type="text" class="form-control" placeholder="Mời bạn nhập tên danh mục" name="title">
+									{!! $errors->first('title', '<span id="title-error" style="color: red" >:message</span>') !!}
 								</div>
 								<div class="form-group">
 									<label>Status</label>

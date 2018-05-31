@@ -9,22 +9,22 @@
 				</a>
 				<ul class="children collapse" id="sub-item-1">
 					<li>
-						<a class="" href="#">
+						<a class="" href="{{ url('admin/departure_schedule') }}">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Lịch khởi hành
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="{{ url('admin/attractions') }}">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Danh lam thắng cảnh
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="{{ url('admin/food_information') }}">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Thông tin ẩm thực
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="{{ url('admin/travel_handbook') }}">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Cẩm nang du lịch
 						</a>
 					</li>
@@ -36,12 +36,12 @@
 				</a>
 				<ul class="children collapse" id="sub-item-2">
 					<li>
-						<a class="" href="#">
+						<a class="" href="{{ url('admin/car_service') }}">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Cho thuê xe
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="{{ url('admin/hotel_service') }}">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Khách sạn
 						</a>
 					</li>

@@ -45,6 +45,10 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        //Bắt lỗi không nhập
+        $this->validate($request, [
+            'title' => 'required|max:100',
+        ]);
         $category = new CategoryModel();
         $category->title = $request->title;
         $category->status = $request->status;

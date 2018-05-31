@@ -40,6 +40,10 @@
 								<div class="form-group">
 									<label>Gía khuyến mãi</label>
 									<input type="text" class="form-control" placeholder="Mời bạn nhập giá khuyến mãi" name="price_new">
+								</div>
+								<div class="form-group">
+									<label>Giảm giá</label>
+									<input type="text" class="form-control" placeholder="Giảm giá" name="sale">
 								</div>	
 								<div class="form-group">
 									<label>Thời gian</label>

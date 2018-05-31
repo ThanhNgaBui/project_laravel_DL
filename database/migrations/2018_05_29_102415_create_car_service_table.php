@@ -15,13 +15,13 @@ class CreateCarServiceTable extends Migration
     {
         Schema::create('car_service', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('hot');
+            $table->integer('hot')->nullable();
             $table->string('title');
-            $table->text('introduce');
-            $table->text('information');
-            $table->text('table_price');
-            $table->float('price');
-            $table->string('image');
+            $table->text('introduce')->nullable();
+            $table->text('information')->nullable();
+            $table->text('table_price')->nullable();
+            $table->float('price',12,2)->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
