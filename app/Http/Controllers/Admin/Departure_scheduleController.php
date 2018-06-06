@@ -21,7 +21,7 @@ class Departure_scheduleController extends Controller
             $departure_schedule = Departure_scheduleModel::where('title', 'like', '%'.$keyword.'%')->paginate(5);
         }
         else{
-            $departure_schedule = Departure_scheduleModel::paginate(5);
+            $departure_schedule = Departure_scheduleModel::orderBy('id', 'DESC')->paginate(5);
         }
         return view('admin.departure_schedule.show', ['departure_schedule' => $departure_schedule]);
     }
@@ -44,6 +44,9 @@ class Departure_scheduleController extends Controller
      */
     public function store(Request $request)
     {
+         $this->validate($request, [
+            'title' => 'required|max:100',
+        ]);
        $image = 'no-image.jpg';
         if($request->hasFile('image')){
             $file = $request->file('image');

@@ -96,10 +96,11 @@
 						    	</div>
 						    </div>
 						</div>
+						{{ $departure_schedule->render() }}
 					</div>	  		
 				</div>
 			</div>
-			{{ $departure_schedule->render() }}
+			
 		</div>
 	</div>
 	<style type="text/css">

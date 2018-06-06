@@ -30,7 +30,7 @@ class DetailsController extends Controller
             $details = DetailsModel::where('title', 'like', '%'.$keyword.'%')->paginate(5);
         }
         else{
-           $details = DetailsModel::paginate(5); 
+           $details = DetailsModel::orderBy('id', 'DESC')->paginate(5); 
         }
         return view('admin.details.show', ['details' => $details]);
     }
@@ -81,6 +81,7 @@ class DetailsController extends Controller
         $p->schedule = $request->schedule;
         $p->information = $request->information;
         $p->search_price = $request->search_price;
+        $p->sale = $request->sale;
         $p->save();
 
         Session::flash('success', "Thêm mới thông tin thành công");
@@ -143,6 +144,7 @@ class DetailsController extends Controller
         $details->schedule = $request->schedule;
         $details->information = $request->information;
         $details->search_price = $request->search_price;
+        $details->sale = $request->sale;
         $details->save();
 
         Session::flash('success', "Cập nhật thông tin thành công!!!");

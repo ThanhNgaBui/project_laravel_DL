@@ -76,9 +76,12 @@
 									<img src="{{ url('uploads/details/'.$details->image)}}" style="width: 100px; height: 100px; ">
 								</div>
 								<div class="form-group">
-									<label>Tour hot</label>
-									<!-- <input type="text" name="hot" id="hot" class="form-control"> --><!-- <label for="hot">&nbsp;Tin nổi bật</label> -->
-									{!! Form::text('hot', null, ["class" => "form-control"]) !!}
-								</div>							
+									<label>Tin nổi bật</label>
+									<div class="checkbox">
+										<label>
+											{!! Form::checkbox('hot', '1') !!}Tin nổi bật
+										</label>
+									</div>
+								</div>						
 								<button type="submit" class="btn btn-primary">Submit</button>
 								<button type="reset" class="btn btn-default">Reset</button>

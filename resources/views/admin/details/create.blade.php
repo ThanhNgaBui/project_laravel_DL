@@ -88,8 +88,7 @@
 								</div>		
 								<div class="form-group">
 									<label>Tour hot</label>
-									<input type="text" name="hot" id="hot" class="form-control"><!-- <label for="hot">&nbsp;Tin nổi bật</label> -->
-
+									<input type="checkbox" name="hot" value="1" class="">
 								</div>							
 								<button type="submit" class="btn btn-primary">Submit</button>
 								<button type="reset" class="btn btn-default">Reset</button>
